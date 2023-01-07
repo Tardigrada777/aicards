@@ -4,12 +4,12 @@ import { ApolloProvider } from '@apollo/client';
 import { client } from './graphql';
 import App from './App'
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
   <React.StrictMode>
     <ApolloProvider client={client}>
       <App />
     </ApolloProvider>
-  </React.StrictMode>,
-)
+  </React.StrictMode>
+);
