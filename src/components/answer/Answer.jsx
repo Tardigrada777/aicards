@@ -1,5 +1,6 @@
 import React from 'react';
-import './answer.scss'
+import '../../style.css'
+import './answer.css'
 
 const Answer = () => {
     return (
