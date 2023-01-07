@@ -1,0 +1,20 @@
+.wrapper__noCard {
+    max-width: 1033px;
+    min-height: 491px;
+    background: #71D9FA;
+    border: 1px solid #000000;
+    box-shadow: 21px 17px 5px rgba(0, 0, 0, 0.22);
+    border-radius: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.wrapper__noCard .title {
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 51px;
+    text-align: center;
+    color: #000000;
+} 
