@@ -1,12 +1,14 @@
-import { useQuery } from "@apollo/client";
-import Cards from "./Cards";
-import CardQuestion from "./component/CardQuestion/CardQuestion";
+import Cards from './components/cards';
+import { useState } from 'react';
+import Login from './components/login/Login';
 
 function App() {
+  const [user, setUser] = useState(null);
+
   return (
     <div className="app">
-      <Cards />
-      <CardQuestion />
+      {user === null && <Login setUser={setUser} />}
+      {user !== null && <Cards user={user} />}
     </div>
   );
 }
