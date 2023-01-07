@@ -49,7 +49,7 @@ input[type=checkbox]:checked+label .reversible {
 
 .card-body {}
 
-.qouestiom__nubmer {
+.question_number {
     font-size: 26px;
     line-height: 38px;
     color: #000000;
@@ -58,7 +58,7 @@ input[type=checkbox]:checked+label .reversible {
     left: 15px;
 }
 
-.ouestion__text {
+.question_text {
     font-size: 32px;
     line-height: 47px;
     text-align: center;
@@ -72,7 +72,7 @@ input[type=checkbox]:checked+label .reversible {
 
 }
 
-.ouestion__texts {
+.question_texts {
     display: flex;
     flex-direction: column;
     padding-top: 136px;
@@ -98,6 +98,7 @@ input[type=checkbox]:checked+label .reversible {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     overflow: hidden;
+    cursor: pointer;
 
 }
 
@@ -135,6 +136,13 @@ input[type=checkbox]:checked+label .reversible {
     text-align: center;
     text-transform: uppercase;
     color: #000000;
+    transition: all 0.3s ease-in-out;
+}
+
+.answer__hard:hover {
+    width: 160px;
+    height: 50px;
+    font-size: 20px;
 }
 
 .answer__good {
@@ -148,7 +156,16 @@ input[type=checkbox]:checked+label .reversible {
     text-align: center;
     text-transform: uppercase;
     color: #000000;
+    transition: all 0.3s ease-in-out;
+
 }
+
+.answer__good:hover {
+    width: 160px;
+    height: 50px;
+    font-size: 20px;
+}
+
 
 .answer__normal {
     width: 130px;
@@ -161,7 +178,16 @@ input[type=checkbox]:checked+label .reversible {
     text-align: center;
     text-transform: uppercase;
     color: #000000;
+    transition: all 0.3s ease-in-out;
+
 }
+
+.answer__normal:hover {
+    width: 160px;
+    height: 50px;
+    font-size: 20px;
+}
+
 
 .answer__easy {
     width: 130px;
@@ -174,4 +200,12 @@ input[type=checkbox]:checked+label .reversible {
     text-align: center;
     text-transform: uppercase;
     color: #000000;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.answer__easy:hover {
+    width: 160px;
+    height: 50px;
+    font-size: 20px;
 }
