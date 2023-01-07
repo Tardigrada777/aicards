@@ -26,3 +26,16 @@ export const UPDATE_CARD = gql`
     }
   }
 `;
+
+export const TRACK_REVIEW = gql`
+  mutation trackReview($user: String!, $level: Int!, $date: timestamptz!, $cardId: Int!) {
+    insert_review_history_one(object: {
+      user: $user,
+      level: $level,
+      date: $date,
+      card_id: $cardId,
+    }) {
+      id
+    }
+  }
+`;

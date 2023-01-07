@@ -19,7 +19,7 @@ const Cards = ({ user }) => {
 
   if (data && data.cards.length === 0) return <NoCards />;
   
-  return <CardQueue cards={data.cards} />
+  return <CardQueue cards={data.cards} user={user} />
 };
 
 export default Cards;
