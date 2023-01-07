@@ -35,7 +35,7 @@ const intervalsMap = () => {
 
 const currentInterval = (interval) => {
   for (const [upEdge, config] of intervalsMap()) {
-    if (interval < upEdge) return config;
+    if (interval <= upEdge) return config;
   }
   return intervalsMap.get(36);
 };
