@@ -5,7 +5,7 @@ import './noCard.css'
 const Answer = () => {
     return (
         <div className="container">
-            <div className="wrapp">
+            <div className="wrapper__noCard">
                 <div className="title">
                     You're good, there's no training for today
                 </div>

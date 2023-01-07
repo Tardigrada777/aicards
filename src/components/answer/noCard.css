@@ -1,4 +1,4 @@
-.wrapp {
+.wrapper__noCard {
     max-width: 1033px;
     min-height: 491px;
     background: #71D9FA;
@@ -11,7 +11,7 @@
 
 }
 
-.wrapp .title {
+.wrapper__noCard .title {
     font-weight: 400;
     font-size: 35px;
     line-height: 51px;
