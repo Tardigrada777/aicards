@@ -1,16 +1,14 @@
-import { useQuery } from '@apollo/client';
-import Cards from './Cards';
-import NoCard from './components/answer/NoCard';
-import Login from './components/login/Login';
+import { useQuery } from "@apollo/client";
+import Cards from "./Cards";
+import CardQuestion from "./component/CardQuestion/CardQuestion";
 
 function App() {
   return (
     <div className="app">
       <Cards />
-      <Login/>
-      <NoCard/>
+      <CardQuestion />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
