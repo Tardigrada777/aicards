@@ -44,6 +44,7 @@ const currentInterval = (interval) => {
  * 
  * @param {number} interval    Int (hours)
  * @param {'hard' | 'normal' | 'good' | 'ease'} complexity  Complexity to remember card.
+ * @returns {number} hours that should be added.
  */
 export const nextReview = (interval, complexity) => {
   const intervalConfig = currentInterval(interval);
