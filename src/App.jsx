@@ -1,6 +1,6 @@
 import { useQuery } from '@apollo/client';
 import Cards from './Cards';
-import Answer from './components/answer/Answer';
+import NoCard from './components/answer/NoCard';
 import Login from './components/login/Login';
 
 function App() {
@@ -8,7 +8,7 @@ function App() {
     <div className="app">
       <Cards />
       <Login/>
-      <Answer/>
+      <NoCard/>
     </div>
   )
 }

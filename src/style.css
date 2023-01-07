@@ -5,7 +5,7 @@
   }
   * {
     font-family: 'Indie Flower', cursive;
-    padding: 0;
+    padding: 0 15px ;
     margin: 0;
     box-sizing: border-box;
   }

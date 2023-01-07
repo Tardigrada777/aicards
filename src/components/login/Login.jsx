@@ -4,7 +4,7 @@ import '../login/login.css'
 
 const Login = () => {
     return (
-        <div className='container'>
+        <div className="container">
             <div className="wrapper">
                 <div className="title">
                     Hello, we are glad to be with us! Enter your name:
@@ -12,7 +12,7 @@ const Login = () => {
                 <div className="name">
                     My name:
                 </div>
-                <input placeholder='For example Victor' type="text" />
+                <input placeholder="For example Victor" type="text" />
                 <div className="button">
                     <button>Start</button>
                 </div>
