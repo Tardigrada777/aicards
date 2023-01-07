@@ -7,16 +7,22 @@ export const GET_CARDS = gql`
       front
       back
       level
+      next_review
+      prev_review
     }
   }
 `;
 
 export const UPDATE_CARD = gql`
-  mutation updateCard($level: Int!, $nextReview: timestamptz!) {
-    update_cards(where: { id: { _eq: 2 } }, _set: { level: $level, next_review: $nextReview }) {
+  mutation updateCard($id: Int!, $level: Int!, $nextReview: timestamptz!, $prevReview: timestamptz!) {
+    update_cards_by_pk(
+      pk_columns: { id: $id },
+      _set: { level: $level, next_review: $nextReview, prev_review: $prevReview }
+    ) {
       id
       level
       next_review
+      prev_review
     }
   }
 `;

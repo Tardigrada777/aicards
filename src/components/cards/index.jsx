@@ -1,7 +1,9 @@
 import { useQuery } from "@apollo/client";
 import { useRef } from "react";
 import { GET_CARDS } from "../../graphql/queries";
+
 import NoCards from '../no-card/NoCard';
+import CardQueue from '../queue';
 
 const Cards = ({ user }) => {
   const nextReview = useRef(new Date().toISOString());
@@ -17,7 +19,7 @@ const Cards = ({ user }) => {
 
   if (data && data.cards.length === 0) return <NoCards />;
   
-  return data.cards.map((c) => <span key={c.front}>{c.front}</span>);
+  return <CardQueue cards={data.cards} />
 };
 
 export default Cards;

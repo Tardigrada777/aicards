@@ -1,63 +1,3 @@
-/* ------------------------------------------------------- */
-
-a {
-    text-decoration: none;
-}
-
-input {
-    opacity: 0;
-}
-
-label[for=test] {
-    display: block;
-    -webkit-perspective: 800px;
-    perspective: 800px;
-}
-
-.reversible {
-    position: relative;
-    width: 250px;
-    margin: 50px auto;
-    -webkit-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-    -webkit-transition: transform 1s ease;
-    transition: all 1s
-}
-
-input[type=checkbox]:checked+label .reversible {
-    -webkit-transform: rotateY(180deg);
-    transform: rotateY(180deg);
-}
-
-.reversible .card {
-    position: absolute;
-    left: -291px;
-    top: 0;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-}
-
-
-.tile-front {
-    z-index: 2;
-}
-
-.tile-back {
-    -webkit-transform: rotateY(180deg);
-    transform: rotateY(180deg);
-}
-
-.card-body {}
-
-.question_number {
-    font-size: 26px;
-    line-height: 38px;
-    color: #000000;
-    position: absolute;
-    top: -10px;
-    left: 15px;
-}
-
 .question_text {
     font-size: 32px;
     line-height: 47px;
@@ -68,8 +8,6 @@ input[type=checkbox]:checked+label .reversible {
     align-items: center;
     padding-top: 201px;
     padding-left: 26px;
-
-
 }
 
 .question_texts {
@@ -83,7 +21,6 @@ input[type=checkbox]:checked+label .reversible {
     font-size: 2rem;
 }
 
-
 .card {
     background: #71D9FA;
     border: 1px solid #000000;
@@ -91,15 +28,11 @@ input[type=checkbox]:checked+label .reversible {
     border-radius: 62px;
     height: 491px;
     transition: all .8s ease;
-    position: absolute;
     top: 0;
     left: 0;
     width: 831px;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
     overflow: hidden;
     cursor: pointer;
-
 }
 
 .answer {
@@ -157,7 +90,6 @@ input[type=checkbox]:checked+label .reversible {
     text-transform: uppercase;
     color: #000000;
     transition: all 0.3s ease-in-out;
-
 }
 
 .answer__good:hover {
@@ -179,7 +111,6 @@ input[type=checkbox]:checked+label .reversible {
     text-transform: uppercase;
     color: #000000;
     transition: all 0.3s ease-in-out;
-
 }
 
 .answer__normal:hover {
@@ -187,7 +118,6 @@ input[type=checkbox]:checked+label .reversible {
     height: 50px;
     font-size: 20px;
 }
-
 
 .answer__easy {
     width: 130px;
@@ -201,7 +131,6 @@ input[type=checkbox]:checked+label .reversible {
     text-transform: uppercase;
     color: #000000;
     transition: all 0.3s ease-in-out;
-
 }
 
 .answer__easy:hover {
