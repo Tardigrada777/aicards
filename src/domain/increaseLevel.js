@@ -5,5 +5,8 @@ export default function increaseLevel(level, answer) {
     good: (level) => level + 10,
     hard: (level) => level -10,
   };
-  return answer in levels ? levels[answer](level) > 100 ? 100: levels[answer](level) : level;
-}
+  const nextLevel = answer in levels ? levels[answer](level) : level;
+  if (nextLevel < 0) return 0;
+  if (nextLevel > 100) return 100;
+  return nextLevel;
+};
