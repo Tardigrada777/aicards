@@ -13,7 +13,7 @@
 .question_texts {
     display: flex;
     flex-direction: column;
-    padding-top: 136px;
+    padding-top: 50px;
     padding-left: 26px;
 }
 
