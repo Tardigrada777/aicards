@@ -13,6 +13,7 @@ function Cards() {
     },
     pollInterval: 0,
   });
+  я;
 
   if (loading) return null;
   return data.cards.map((c) => <span key={c.front}>{c.front}</span>);
